@@ -22,6 +22,13 @@ def main():
         i = input("refresh (Y/n): ")
         refresh = i != 'n'
 
+def fat(n):
+    prod = 1
+    for i in range(2,n):
+        prod *= i
+    return prod
+
 if __name__ == "__main__":
     # execute only if run as a script
-    main()
+    print(fat(4))
+    #main()
